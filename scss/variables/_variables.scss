@@ -1,8 +1,7 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family: "Roboto";
-$second_font_family: "Roboto Slab";
-$main_color: #000;
+$main_font_family: "Montserrat";
+$second_font_family: "Montserrat";
 $main_line_height: 1.2;
 $main_font_size: 1em;
 
@@ -11,12 +10,34 @@ $container_width: 80em;
 $footer_height: auto;
 
 // Color collection for elements
-$color_primary: #7b8287;
+$main_color: #9F9F9F;
+$color_primary: #333333;
+
+$color_warning: #B88E2F;
+$color_warning_light: #F9F1E7;
+
+
 $color_success: #36a566;
 $color_info: #03a9f4;
-$color_warning: #fca33e;
 $color_danger: #ff1a1a;
+
 $color_white: #ffffff;
+$color_black: #000000;
+
+
+// $color1: #e5d4b6;
+// $color2: #d8bd92;
+// $color3: #c99551;
+// $color4: #af5039;
+// $color5: #c09f82;
+
+
+// $color6: #eae7e4;
+// $color6: #d0c2b8;
+// $color6: #bfbcb9;
+// $color6: #93918d;
+// $color6: #3b3631;
+
 
 /* Grid */
 /* ======================================================================== */
