@@ -531,7 +531,7 @@ body {
 }
 
 .container_center, .footer__content, .header__content {
-  max-width: 80em;
+  max-width: 79.25em;
   padding: 0 1em;
   margin-left: auto;
   margin-right: auto;
@@ -748,23 +748,78 @@ body {
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-  padding: 1em 0;
-  background-color: #ddd;
+  padding: 0.625em 0;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 1.875em 0;
+  }
 }
 .header__content {
   margin: auto;
+}
+.header__row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1em;
 }
-.header__toggle {
-  position: absolute;
+@media (min-width: 768px) {
+  .header__col {
+    width: 12.5em;
+  }
+}
+@media (min-width: 768px) {
+  .header__col.nav {
+    flex-grow: 1;
+  }
+}
+.header .logo a {
+  display: block;
+  text-decoration: none;
+  width: 7.125em;
+  font-size: 0.625em;
+}
+@media (min-width: 768px) {
+  .header .logo a {
+    font-size: 1em;
+  }
+}
+.header .logo a img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.header .action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5em;
+}
+@media (min-width: 768px) {
+  .header .action {
+    justify-content: flex-end;
+    gap: 2.8125em;
+  }
+}
+.header .action a {
+  color: #000000;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .header .action a:hover {
+    color: #B88E2F;
+  }
 }
 @media (max-width: 767px) {
   .header__toggle {
-    top: 1em;
+    position: absolute;
+    top: 1.25em;
     right: 1em;
-    width: 1.25em;
+    width: 1.5em;
     height: 0.875em;
     color: #9F9F9F;
     border: 0.125em solid;
@@ -779,7 +834,7 @@ body {
     border-top: 0.125em solid;
     position: absolute;
     top: 50%;
-    margin-top: -0.0625em;
+    transform: translateY(-50%);
     left: 0;
     width: 100%;
     transition: transform 0.3s;
@@ -800,7 +855,7 @@ body {
   }
   .header__toggle_open:after, .header__toggle_open:before {
     content: "";
-    border-top: 0.125em solid #9F9F9F;
+    border-top: 0.125em solid #B88E2F;
   }
   .header__toggle_open:before {
     transform: rotate(45deg);
@@ -809,125 +864,122 @@ body {
     transform: rotate(-45deg);
   }
 }
-.stiky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-}
 
 @media (max-width: 767px) {
   .navbar {
     position: fixed;
-    right: -18.75em;
+    right: -100vw;
     top: 0;
     bottom: 0;
-    background-color: #ffffff;
-    width: 18.75em;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    width: 100vw;
+    height: 100%;
+    padding: 5em 1em 5em;
+    background-color: #ffffff;
     overflow: hidden;
-    padding: 5em 1em 2em;
     transition: right 0.3s;
-    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
   }
   .navbar_open {
     right: 0;
-  }
-}
-@media (max-width: 767px) {
-  .nav_open_bg {
-    background: rgba(0, 110, 255, 0.3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: -11em;
-    width: 11em;
-    z-index: 8;
-    transition: left 0.3s;
-  }
-  .nav_open_bg_open {
-    left: 0;
   }
 }
 .menu {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .menu {
     display: flex;
+    justify-content: center;
+    gap: 4.6875em;
   }
 }
 .menu-item {
-  padding-bottom: 0.5em;
+  margin-top: 1em;
+}
+.menu-item:first-child {
+  margin-top: 0;
 }
 @media (min-width: 768px) {
   .menu-item {
-    margin-right: 0.5em;
-  }
-  .menu-item:last-child {
-    margin-right: 0;
+    margin-top: 0;
   }
 }
 .menu-item a {
-  font-family: "Montserrat";
-  color: #9F9F9F;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-.menu-item-has-children {
   position: relative;
-}
-.menu-item-has-children:after {
-  font-family: "icomoon";
-  content: "";
-  display: inline-block;
-  transition: 0.3s;
-  transform: rotate(0deg);
-  cursor: pointer;
-}
-.menu-item-has-children:hover:after {
-  transform: rotate(180deg);
-}
-.menu-item-has-children:hover .sub-menu {
-  height: auto;
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.sub-menu {
-  margin: 0;
-  padding: 0.5em 1em 1em;
-  list-style: none;
-  position: absolute;
-  width: -webkit-max-content;
-  width: max-content;
-  height: 0;
-  opacity: 0;
-  visibility: hidden;
-  overflow: hidden;
-  top: 130%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  transition: 0.3s;
-  background: #ffffff;
-  z-index: 10;
-}
-.sub-menu a {
-  font-size: 0.75em;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #000000;
 }
 @media (min-width: 768px) {
-  .sub-menu {
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  .menu-item a {
+    font-size: 1em;
   }
 }
-
-.current-menu-item > a {
-  color: #36a566;
+.menu-item a:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 0%;
+  left: 0;
+  bottom: -0.125em;
+  border-bottom: 0.125em solid;
+  border-color: inherit;
+}
+@media (min-width: 768px) {
+  .menu-item a:after {
+    transition: width 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 768px) {
+  .menu-item:hover a {
+    color: #B88E2F;
+  }
+  .menu-item:hover a:after {
+    width: 100%;
+  }
+  .menu-item:first-child a:after {
+    left: 0;
+    transform: none;
+  }
+  .menu-item:first-child a:hover:after {
+    width: 75%;
+  }
+  .menu-item:last-child a:after {
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+  .menu-item:last-child a:hover:after {
+    width: 75%;
+  }
+}
+.menu-item.current-menu-item a {
+  color: #B88E2F;
+}
+.menu-item.current-menu-item a:after {
+  width: 75%;
+}
+@media (min-width: 768px) {
+  .menu-item.current-menu-item a:after {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .menu-item:first-child.current-menu-item a:after, .menu-item:last-child.current-menu-item a:after {
+    width: 75%;
+  }
 }
 
 .nav-open {

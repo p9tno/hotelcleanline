@@ -13,40 +13,36 @@
     <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
   </head>
   <body>
-    <div class="preloader__wrap" id="preloader">
-      <div class="preloader"><div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-<div></div>
-      </div>
-    </div>
     <div class="wrapper" id="wrapper">
       <header class="header">
         <div class="header__content">
-          <div class="header__logo"><a class="logo" href="/"><img src="/img/logo.png" alt="alt"/></a></div>
-          <div class="header__toggle"></div>
-          <div class="header__nav">
-            <nav class="navbar" id="navbar">
-              <ul class="menu">
-                <li class="menu-item current-menu-item"><a href="#">Новости</a></li>
-                <li class="menu-item"><a href="#">Объявления</a></li>
-                <li class="menu-item"><a href="#">F.A.Q.</a></li>
-                <li class="menu-item"><a href="#">Контакты</a></li>
-                <li class="menu-item menu-item-has-children"><a href="#">Важное</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item"><a href="#">Важный пункт меню</a></li>
-                    <li class="menu-item"><a href="#">Важный пункт меню</a></li>
-                    <li class="menu-item"><a href="#">Важный пункт меню</a></li>
-                    <li class="menu-item"><a href="#">Важный пункт меню</a></li>
-                  </ul>
-                </li>
+          <div class="header__row"> 
+            <div class="header__col logo"><a href="/"><img src="/img/logo.png" alt="alt"/></a></div>
+            <div class="header__col nav">
+              <nav class="navbar" id="navbar">
+                <ul class="menu">
+                  <li class="menu-item current-menu-item"><a href="#">Главная</a></li>
+                  <li class="menu-item"><a href="#">Магазин</a></li>
+                  <li class="menu-item"><a href="#">О нас</a></li>
+                  <li class="menu-item"><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="action list mobile">
+                  <li> <a href="#"><i class="icon_man"> </i></a></li>
+                  <li> <a href="#"><i class="icon_loupe"> </i></a></li>
+                  <li> <a href="#"><i class="icon_heart"> </i></a></li>
+                  <li> <a href="#"><i class="icon_cart"> </i></a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__col desktop">
+              <ul class="action list">
+                <li> <a href="#"><i class="icon_man"> </i></a></li>
+                <li> <a href="#"><i class="icon_loupe"> </i></a></li>
+                <li> <a href="#"><i class="icon_heart"> </i></a></li>
+                <li> <a href="#"><i class="icon_cart"> </i></a></li>
               </ul>
-            </nav>
+            </div>
+            <div class="header__toggle"></div>
           </div>
         </div>
       </header>
