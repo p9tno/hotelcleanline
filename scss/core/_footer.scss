@@ -3,7 +3,7 @@
 .footer {
 	position: relative;
 	padding: 2.5em 0;
-	background-color: #faf3ed;
+	background-color: $color_warning_light;
 	@media (min-width: 768px) {
 		padding: 4.75em 0;
 	  
@@ -18,9 +18,7 @@
 	}
 
 	&__row {
-		// display: flex;
-		// justify-content: center;
-		// align-items: center;
+
 	}
 
 	&__logo {
@@ -60,5 +58,9 @@
 			  }
 			}
 		}
+	}
+
+	&__soc {
+		margin-top: 2em;
 	}
 }

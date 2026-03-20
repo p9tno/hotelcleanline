@@ -63,7 +63,7 @@
 		}
 		
 		a {
-			color: $color_black;
+			color: $main_color;
 			font-size: 1.5em;
 			text-decoration: none;
 
@@ -214,7 +214,7 @@
 
 			font-weight: 500;
 			font-size: 1.5em;
-			color: $color_black;
+			color: $main_color;
 			
 			@media (min-width: 768px) {
 				font-size: 1em;
