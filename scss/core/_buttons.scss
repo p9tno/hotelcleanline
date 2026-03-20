@@ -2,66 +2,81 @@
 
 .btn {
 	display: inline-block;
-	padding: 1em 2em;
-	border-radius: 1em;
-	border: none;
+	padding: 0.9375em 2.25em;
+	border-radius: 0.625em;
+	border: 1px solid;
 	outline: none;
 	max-width: 100%;
 
 	font-family: $main_font_family;
-	font-size: 1em;
-	font-weight: 400;
+	font-size: 0.75em;
+	font-weight: 600;
+	line-height: 1;
 	text-decoration: none;
 	text-align: center;
-
-	color: $main_color;
-	background-color: $color_primary;
+	
+	color: $color_white;
+	border-color: $color_warning;
+	background-color: $color_warning;
 	
 	cursor: pointer;
 	transition: 0.3s;
-
-	// градиент
-	// position: relative;
-	// z-index: 10;
-	// overflow: hidden;
-	//
-	// &:before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	z-index: -1;
-	// 	transition: width 0.5s;
-	// 	background-image: linear-gradient(90deg, $color_seccondary 0%, #e8b7be 100%);
-	// }
-	//
-	// &:hover {
-	// 	background-color: #fff;
-	// 	color: $color_withe;
-	// 	text-decoration: none;
-	//
-	// 	&:before {
-	// 		width: 150%;
-	// 	}
-	// }
-
-	&:hover {
-		background-color: $btn_default_bg_color_hover;
-		color: $btn_default_text_color;
+	
+	@media (min-width: 768px) {
+		font-size: 1em;
 	}
 
-	&:active,
-	&:focus {
-		background-color: $btn_default_bg_color_active;
-		color: $btn_default_text_color;
+	&:hover {
+		@media (min-width: 768px) {
+			color: $color_warning;
+			border-color: $color_warning;
+			background-color: $color_white;
+		}
+	}
+	
+	&:active {
+		@media (min-width: 768px) {
+			color: $color_white;
+			border-color: $color_warning;
+			background-color: $color_warning;
+		}
 	}
 
 	&:disabled {
-		color: red;
 		cursor: not-allowed;
-		// pointer-events: none;
+		opacity: 0.4;
 	}
 
+	&_lg {
+		padding: 1.75em 2.5em;
+		text-transform: uppercase;
+	}
+
+	&_border {
+		color: $color_warning;
+		border-color: $color_warning;
+		background-color: $color_white;
+
+		&:hover {
+			@media (min-width: 768px) {
+				color: $color_white;
+				border-color: $color_warning;
+				background-color: $color_warning;
+			}
+		}
+		
+		&:active {
+			@media (min-width: 768px) {
+				color: $color_warning;
+				border-color: $color_warning;
+				background-color: $color_white;
+			}
+		}
+	}
+
+
 }
+
+
+
+
