@@ -540,13 +540,21 @@ body {
 .section {
   padding: 2em 0;
 }
+.section:first-child {
+  padding-top: 3.25em;
+}
+@media (min-width: 768px) {
+  .section:first-child {
+    padding-top: 6.25em;
+  }
+}
 .section__title {
   margin: 0;
   font-family: "Montserrat";
   color: #333333;
   line-height: 1.1;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 1.75em;
 }
 @media (min-width: 768px) {
   .section__title {
@@ -790,12 +798,17 @@ body {
 /* Header
  ----------------------------------------------------------------------------- */
 .header {
-  padding: 0.625em 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  padding: 0.63em 0;
   background-color: #ffffff;
 }
 @media (min-width: 768px) {
   .header {
-    padding: 1.875em 0;
+    padding: 1.532em 0;
   }
 }
 .header__content {
@@ -907,6 +920,23 @@ body {
   }
 }
 
+.stiky {
+  position: fixed;
+  animation-name: showMenu;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes showMenu {
+  0% {
+    opacity: 0.5;
+    transform: translateY(-4em);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0em);
+  }
+}
 @media (max-width: 767px) {
   .navbar {
     position: fixed;
@@ -920,7 +950,7 @@ body {
     justify-content: center;
     gap: 3em;
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     padding: 5em 1em 5em;
     background-color: #ffffff;
     overflow: hidden;

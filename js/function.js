@@ -315,45 +315,39 @@ $(document).ready(function() {
     }
     addDataFancybox();
 
-
-
-
-    // Stiky menu // Липкое меню. При прокрутке к элементу #header добавляется класс .stiky который и стилизуем
     function stikyMenu() {
-        let HeaderTop = $( 'header' ).offset().top;
-        // let HeaderTop = $( 'header' ).offset().top + $( '.home' ).innerHeight();
-        let currentTop = $( window ).scrollTop();
+        let firstSection = $('main section:first');
+        let header = $('header');
+        let currentTop = $(window).scrollTop();
+
+        // Проверяем, есть ли секции в main
+        if ($('main section').length === 0) {
+            console.warn('Секции не найдены внутри main');
+            return;
+        }
 
         setNavbarPosition();
 
-        $( window ).scroll( function () {
+        $(window).scroll(function () {
             setNavbarPosition();
-        } );
+        });
 
         function setNavbarPosition() {
-            currentTop = $( window ).scrollTop();
+            currentTop = $(window).scrollTop();
 
-            if ( currentTop > HeaderTop ) {
-                $( 'header' ).addClass( 'stiky' );
-            } else {
-                $( 'header' ).removeClass( 'stiky' );
+            if (firstSection.length > 0) {
+                let firstSectionBottom = firstSection.offset().top + firstSection.outerHeight();
+                
+                // Добавляем небольшой отступ для плавности (опционально)
+                let threshold = firstSectionBottom - 10;
+                
+                if (currentTop > threshold) {
+                    header.addClass('stiky');
+                } else {
+                    header.removeClass('stiky');
+                }
             }
-
-            // $( '.navbar__link' ).each( function () {
-            //     let section = $( this ).attr( 'href' );
-            //
-            //     if ( $( 'section' ).is( section ) ) {
-            //         let offset = $( section ).offset().top;
-            //
-            //         if ( offset <= currentTop && offset + $( section ).innerHeight() > currentTop ) {
-            //             $( this ).addClass( 'active' );
-            //         } else {
-            //             $( this ).removeClass( 'active' );
-            //         }
-            //     }
-            // } );
         }
-        
     }
     stikyMenu();
 
