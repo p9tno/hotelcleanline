@@ -112,7 +112,7 @@ textarea {
 	font-size: 1em;
 	font-weight: 400;
 	border-radius: 0.3125em;
-	transition: 0.3s;
+	transition: 0.5s;
 
 	&:hover {
 		border: 0.0625em solid $input_hover_border_color;
@@ -310,7 +310,7 @@ input[type=checkbox] {
 					font-weight: 400;
 					// border-radius: 0;
 					border-radius: 0.3125em;
-					transition: 0.3s;
+					transition: 0.5s;
 					transition-property: color background border;
 					width: 100%;
 					height: auto;
@@ -436,7 +436,7 @@ input[type=checkbox] {
 							outline: none;
 							font-weight: 400;
 							border-radius: 0;
-							transition: 0.3s;
+							transition: 0.5s;
 							transition-property: color background border;
 							width: 100%;
 							height: auto;

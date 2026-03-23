@@ -1,6 +1,30 @@
 $(document).ready(function() {
 
 
+    const firstscreen = new Swiper('.firstscreen_swiper_js', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        speed: 1500,
+        loop: true,
+        effect: "fade",
+        fadeEffect: {
+            crossFade: true,
+        },
+        autoplay: {
+          delay: 6000,
+        },
+        simulateTouch: false,
+
+        navigation: {
+            nextEl: '.icon_arrow_right_sm',
+            prevEl: '.icon_arrow_left_sm',
+        },
+        pagination: {
+            el: '.firstscreen_pagination_js',
+            clickable: true,
+        },
+    });
+
     const certificate = new Swiper('.certificate-swiper-js', {
         slidesPerView: 2,
         spaceBetween: 10,

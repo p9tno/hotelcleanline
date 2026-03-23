@@ -20,7 +20,7 @@
 	background-color: $color_warning;
 	
 	cursor: pointer;
-	transition: 0.3s;
+	transition: 0.5s;
 	
 	@media (min-width: 768px) {
 		font-size: 1em;
@@ -30,7 +30,7 @@
 		@media (min-width: 768px) {
 			color: $color_warning;
 			border-color: $color_warning;
-			background-color: $color_white;
+			background-color: transparent;
 		}
 	}
 	
@@ -55,7 +55,7 @@
 	&_border {
 		color: $color_warning;
 		border-color: $color_warning;
-		background-color: $color_white;
+		background-color: transparent;
 
 		&:hover {
 			@media (min-width: 768px) {
@@ -69,7 +69,7 @@
 			@media (min-width: 768px) {
 				color: $color_warning;
 				border-color: $color_warning;
-				background-color: $color_white;
+				background-color: transparent;
 			}
 		}
 	}
