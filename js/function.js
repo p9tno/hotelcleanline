@@ -461,25 +461,72 @@ $(document).ready(function() {
     }
     // end animate numbers
 
-    function initAOS () {
-        // https://github.com/michalsnik/aos
+    function initAOS() {
+        // Добавляем анимацию к заголовкам
+        // document.querySelectorAll('.section__title').forEach(title => {
+        //     title.setAttribute('data-aos', 'fade-up');
+        //     // Можно добавить дополнительные атрибуты для тонкой настройки
+        //     title.setAttribute('data-aos-duration', '1200');
+        //     title.setAttribute('data-aos-delay', '200');
+        //     title.setAttribute('data-aos-easing', 'ease-out-cubic');
+        // });
+
+        // Настройки для разных типов элементов
+        const animations = {
+            '.section__title': {
+                animation: 'fade-up',
+                // duration: 1200,
+                // delay: 200,
+                // offset: 40
+            },
+            // '.section__subtitle': {
+            //     animation: 'fade-up',
+            //     duration: 1000,
+            //     delay: 300
+            // },
+            // '.card': {
+            //     animation: 'fade-in',
+            //     duration: 800,
+            //     delay: 100
+            // }
+        };
+        
+        // Применяем анимации ко всем элементам
+        Object.entries(animations).forEach(([selector, config]) => {
+            document.querySelectorAll(selector).forEach(element => {
+                if (config.animation) {
+                    element.setAttribute('data-aos', config.animation);
+                }
+                if (config.duration) {
+                    element.setAttribute('data-aos-duration', config.duration);
+                }
+                if (config.delay) {
+                    element.setAttribute('data-aos-delay', config.delay);
+                }
+                if (config.offset) {
+                    element.setAttribute('data-aos-offset', config.offset);
+                }
+            });
+        });
+        
+        // Единая инициализация AOS
         AOS.init({
-            disable: 'mobile',
-            // anchorPlacement: 'bottom-bottom',
-            duration: 1000, // values from 0 to 3000, with step 50ms
-            // offset: 20,
+            disable: function() {
+                return window.innerWidth < 768;
+            },
+            offset: 40,
+            delay: 0,
+            duration: 1200,
+            easing: 'ease-out-cubic',
             once: true,
+            mirror: false,
+            throttleDelay: 99,
+            debounceDelay: 50,
+            anchorPlacement: 'top-bottom'
         });
-
-        AOS.init({
-            disable: function () {
-                var maxWidth = 768;
-                return window.innerWidth < maxWidth;
-            }
-        });
-
     }
-    initAOS ();
+
+    initAOS();
 
 
     // <a class="scroll_js" href="#id"></a>

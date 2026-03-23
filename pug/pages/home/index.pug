@@ -19,7 +19,7 @@ block content
                                         img(src="../../../img/firstscreen_"+item.img+".webp", alt="")
                                
                                     .firstscreen__content
-                                        h2.section__title!=item.title
+                                        h2.firstscreen__title!=item.title
                                         .firstscreen__desc
                                             p=item.desc
                                         .firstscreen__btn
@@ -35,6 +35,24 @@ block content
            
     
     // end firstscreen
+
+    // begin topCategories
+    section#topCategories.topCategories.section
+        .container_center.container_center_sm
+            h2.section__title Заголовок секции основных категорий
+            .section__desc Описание секции основных категорий
+            .topCategories__grid
+                each item in [{img: '1', title: 'Продукт 1'}, {img: '2', title: 'Продукт 2'}, {img: '3', title: 'Продукт 3'}, ]
+                    a.topCategories__item(href="#")
+                        .topCategories__img.img
+                            img(src="../../../img/firstscreen_"+item.img+".webp", alt="")
+                        .topCategories__title!=item.title
+
+            .section__btn 
+                a.btn(href="#") Кнопка секции
+              
+    
+    // end topCategories
 
     // begin knionjubniuhbui
     section#knionjubniuhbui.knionjubniuhbui.section

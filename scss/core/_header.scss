@@ -155,11 +155,8 @@ $transition: 0.5s;
 // stiky menu
 .stiky {
 	position: fixed;
-	// padding: 0.5em 0;
-	// z-index: 5;
-
-	
-
+	padding: 1em 0;
+	box-shadow: 0 2px 4px -2px rgba($color_primary, 0.125);
 	-webkit-animation-name: showMenu;
 	animation-name: showMenu;
 	-webkit-animation-duration: $transition;
