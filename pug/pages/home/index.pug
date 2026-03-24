@@ -54,15 +54,39 @@ block content
     
     // end topCategories
 
-    // begin knionjubniuhbui
-    section#knionjubniuhbui.knionjubniuhbui.section
+    // begin media
+    section#mediaSlider.media.media_swiper.section
         .container_center
-            h2.section__title  knionjubniuhbui
-            .knionjubniuhbui__content
-                .knionjubniuhbui__left
-                .knionjubniuhbui__right
-    
-    // end knionjubniuhbui
+            .media__layout
+               
+                .swiper.media_swiper_js
+                    .swiper-wrapper.counter-wrap 
+                        each item in [1,2,3]
+                            .swiper-slide.counter-item
+                                .media__thumbnail
+                                    .media__img.img
+                                        img(src="../../../img/firstscreen_"+item+".webp" alt="" loading="lazy")
+
+                                    .media__label
+                                        span.counter-el  &mdash;  Спальня
+                                        p Внутренний мир
+
+
+                    .swiper-nav.media__nav.desktop
+                        i.swiper-arrow.icon_arrow_left_sm
+                        i.swiper-arrow.icon_arrow_right_sm
+
+                    .swiper-pagination.media__pagination.media_pagination_js
+                   
+                .media__content
+                    h2.section__title.ta_l Красивые номеров для вдохновения
+                    .section__content.ta_l
+                        p Наш дизайнер уже сделал множество красивых прототипов комнат, которые вас вдохновляют.
+                        
+                    .section__btn.ta_l
+                        a.btn(href="#") кнопка
+
+    // end media
 
     //- // begin form
     //- section#form.form.section

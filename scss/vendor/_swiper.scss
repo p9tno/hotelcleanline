@@ -68,6 +68,14 @@
 
 
 .swiper-pagination {
+  @media (max-width: 767px) {
+      position: static;
+      margin-top: 1.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 1.25em;
+  }
   
 }
 
@@ -92,7 +100,7 @@
   width: 0.6875em;
   height: 0.6875em;
   border-radius: 100%;
-  background: $color_warning_light;
+  background: rgba($color_warning, 0.75);
   margin: 0 0.625em!important;
 
   &:before {

@@ -66,6 +66,10 @@ body {
 			font-size: 2.5em;
 			font-weight: 700;
 		}
+
+		&.ta_l {
+			text-align: left;
+		}
 	}
 	
 	&__desc {
@@ -76,6 +80,10 @@ body {
 		@media (min-width: 768px) {
 			font-size: 1.5em;
 		}
+
+		&.ta_l {
+			text-align: left;
+		}
 	}
 
 	&__btn {
@@ -83,7 +91,34 @@ body {
 		text-align: center;
 		@media (min-width: 768px) {
 			margin-top: 2em;
-		  
+		}
+
+		&.ta_l {
+			text-align: left;
+		}
+	}
+
+	&__content  {
+		margin-top: 1.5em;
+		text-align: center;
+		@media (min-width: 768px) {
+			margin-top: 2em;
+		}
+
+		&.ta_l {
+			text-align: left;
+		}
+		
+		> * {
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+		
 		}
 	}
 }

@@ -25,6 +25,37 @@ $(document).ready(function() {
         },
     });
 
+    let speed = 3000;
+    let delay = 5000;
+
+    const media = new Swiper('.media_swiper_js', {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        speed: speed,
+        loop: false,
+        // autoplay: {
+        //     delay: delay,
+        // },
+        
+        navigation: {
+            nextEl: '.icon_arrow_right_sm',
+            prevEl: '.icon_arrow_left_sm',
+        },
+        pagination: {
+            el: '.media_pagination_js',
+            clickable: true,
+        },
+        
+        breakpoints: {
+            768: {
+                spaceBetween: 24,
+                slidesPerView: 2,
+                simulateTouch: false,
+            },
+
+        }
+    });
+
     const certificate = new Swiper('.certificate-swiper-js', {
         slidesPerView: 2,
         spaceBetween: 10,
@@ -62,8 +93,8 @@ $(document).ready(function() {
         // },
 
         navigation: {
-            nextEl: '.ourhouses__arrows .icon_arrow_right',
-            prevEl: '.ourhouses__arrows .icon_arrow_left',
+            nextEl: '.media__arrow .icon_arrow_right',
+            prevEl: '.media__arrow .icon_arrow_left',
         },
         pagination: {
             el: '.ourhouses__dotted',
