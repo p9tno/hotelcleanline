@@ -1348,6 +1348,42 @@ body {
   }
 }
 
+.hscroll {
+  border: 1px solid #000;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.hscroll .swiper {
+  padding-bottom: 3.75em;
+}
+.hscroll .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+.hscroll .swiper-slide {
+  position: relative;
+  overflow: hidden;
+  height: 45em;
+}
+.hscroll__content {
+  margin-top: 2em;
+  border: 1px solid red;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 112.5em;
+}
+@media (min-width: 768px) {
+  .hscroll__content {
+    margin-top: 3.25em;
+  }
+}
+.hscroll__img {
+  border-radius: 0.625em;
+  position: absolute;
+}
+
 .media {
   overflow: hidden;
 }

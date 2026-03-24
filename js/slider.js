@@ -56,6 +56,55 @@ $(document).ready(function() {
         }
     });
 
+    const hscroll = new Swiper('.hscroll_swiper_js', {
+        slidesPerView: 1,
+        spaceBetween: 8,
+        // speed: 40000,
+        speed: 400000,
+        loop: true,
+        // autoplay: {
+        //     delay: 0,
+        //     disableOnInteraction: false,
+        //     waitForTransition: false,
+        // },
+        allowTouchMove: false,
+        simulateTouch: false,
+        watchSlidesProgress: true,
+        updateOnWindowResize: true,
+        observer: true,
+        observeParents: true,
+
+        breakpoints: {
+            768: {
+                spaceBetween: 16,
+                slidesPerView: 1,
+            },
+
+        },
+        
+        // on: {
+        //     init: function() {
+        //         // console.log('Swiper initialized');
+        //         this.autoplay.start();
+        //     },
+        //     transitionStart: function() {
+        //         // console.log('Transition STARTED');
+        //     },
+        //     transitionEnd: function() {
+        //         // console.log('Transition ENDED - restarting autoplay');
+        //         // КРИТИЧЕСКИ ВАЖНО: принудительно перезапускаем
+        //         this.autoplay.stop();
+        //         this.autoplay.start();
+        //     },
+        //     // autoplayStop: function() {
+        //     //     console.log('Autoplay STOPPED - restarting');
+        //     //     setTimeout(() => {
+        //     //         this.autoplay.start();
+        //     //     }, 100);
+        //     // }
+        // }
+    });
+
     const certificate = new Swiper('.certificate-swiper-js', {
         slidesPerView: 2,
         spaceBetween: 10,

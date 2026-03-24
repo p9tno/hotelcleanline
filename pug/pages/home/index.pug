@@ -88,6 +88,27 @@ block content
 
     // end media
 
+    // begin hscroll
+    section#hscroll.hscroll.section
+        .hscroll__head
+            h2.section__title # Заголовок секции 
+            .section__desc Описание секции
+        .hscroll__content
+            .swiper.hscroll_swiper_js
+                .swiper-wrapper
+                    //- each item in [{img: "1"}, {img: "2"}, {img: "3"}, {img: "1"}, {img: "2"}, {img: "3"}, {img: "1"}, {img: "2"}, {img: "3"}, {img: "1"}, {img: "2"}, {img: "3"}, ]
+                    each item in [{img: "1"}, {img: "2"} ]
+                        .swiper-slide.no_interaction
+                            each img in [{img: "1"}, {img: "2"}, {img: "3"}, {img: "1"}, {img: "2"}, {img: "3"}, {img: "1"}, {img: "2"}, {img: "3"}  ]
+                                .hscroll__img.img
+                                    img(src="../../../img/firstscreen_"+img.img+".webp", alt="")
+
+        .section__btn 
+            a.btn(href="#") кнопка
+
+    
+    // end hscroll
+
     //- // begin form
     //- section#form.form.section
     //-     .container_center
