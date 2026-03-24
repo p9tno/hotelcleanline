@@ -33,9 +33,9 @@ $(document).ready(function() {
         spaceBetween: 20,
         speed: speed,
         loop: false,
-        // autoplay: {
-        //     delay: delay,
-        // },
+        autoplay: {
+            delay: delay,
+        },
         
         navigation: {
             nextEl: '.icon_arrow_right_sm',
