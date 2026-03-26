@@ -25,7 +25,7 @@ block content
                                         .firstscreen__btn
                                             a.btn.btn_lg(href="") посмотреть
 
-                    .swiper-pagination.firstscreen__pagination.firstscreen_pagination_js
+                    .swiper-pagination.firstscreen__pagination
                                     
                     .swiper-nav.firstscreen__nav
                         i.swiper-arrow.icon_arrow_left_sm
@@ -76,7 +76,7 @@ block content
                         i.swiper-arrow.icon_arrow_left_sm
                         i.swiper-arrow.icon_arrow_right_sm
 
-                    .swiper-pagination.media__pagination.media_pagination_js
+                    .swiper-pagination.media__pagination
                    
                 .media__content
                     h2.section__title.ta_l Красивые номеров для вдохновения
@@ -128,12 +128,38 @@ block content
                         //-     i.swiper-arrow.icon_arrow_left_sm
                         //-     i.swiper-arrow.icon_arrow_right_sm
 
-                        .swiper-pagination.partners__pagination.partners_pagination_js
+                        .swiper-pagination.partners__pagination
            
                 .section__btn
                         a.btn(href="#") кнопка
     
     // end partners
+
+    // begin banner
+    section#banner.banner.section
+        .container_center
+            .banner__swiper
+                .swiper.banner_swiper_js
+                    .swiper-wrapper
+                        each item in [1,2]
+                            .swiper-slide.banner__slide
+                                .banner__img.img
+                                    img(src="../../../img/firstscreen_"+item+".webp", alt="")
+                                .banner__content
+                                    h2.banner__title.ta_l Лучшие скидки
+                                    .banner__desc.ta_l Lorem ipsum dolor sit amet, animal utamur id nec, clita doming oblique usu cu, utroque omittam ex sea inani eleifend.
+                                    .section__btn.ta_l 
+                                        a.btn(href="#") перейти
+
+                    .swiper-nav.banner__nav.desktop
+                        i.swiper-arrow.icon_arrow_left_sm
+                        i.swiper-arrow.icon_arrow_right_sm
+
+                .swiper-pagination.banner__pagination.mobile
+            
+
+    
+    // end banner
 
     //- // begin form
     //- section#form.form.section
