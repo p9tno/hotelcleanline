@@ -62,13 +62,14 @@ block content
             .section__desc Описание секции, если нужно
             .section__wrap
                 .product__grid
-                    include ../../products/product.pug
-                    //- include ../products/productOfStock.pug
-                    //- include ../products/productSell.pug
-                    //- include ../products/product.pug
-                    //- include ../products/product.pug
+                    each item in [1,2,3]
+                        
+                        include ../../products/product.pug
+                        include ../../products/productOfStock.pug
+                        include ../../products/productSell.pug
+                        include ../../products/product.pug
 
-                    //- include ../products/pagination.pug
+                        //- include ../products/pagination.pug
             .section__btn 
                 a.btn(href="#") Все товары
                

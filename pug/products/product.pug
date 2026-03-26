@@ -7,20 +7,22 @@
 
     .product__header
         a(href="#").product__img.img
-            img(src="../../img/product_1.png" alt="image" loading="lazy")
-    .product__body
+            img(src="../../../img/firstscreen_1.webp" alt="image" loading="lazy")
+
+    .product__body.product_padding
         .product__head
             .product__code Код товара: 012 452
 
             //- Под заказ В наличии 
             .product__boolean В наличии
-        a(href="#").product__title Звуковая плата Arduino MXC-40
-        ul.product__cat.list
-            each item in [{label: 'Чип:', val: 'ARD-234'}, {label: 'Мощность:', val: '20Вт'}, {label: 'Применение:', val: 'Проф. область'}, ]
-                li
-                    span=item.label
-                    span=item.val
-    .product__footer
+
+        a(href="#").product__title Название товара в несколько строк
+        //- ul.product__cat.list
+        //-     each item in [{label: 'Параметр:', val: 'Значение'}, {label: 'Параметр 2:', val: 'Значение'}, ]
+        //-         li
+        //-             span=item.label
+        //-             span=item.val
+    .product__footer.product_padding
         .product__price
             del
                 span.woocommerce-Price-amount.amount
@@ -32,9 +34,10 @@
             a.btn(href="#")
                 span Купить
                 i.icon_basket
+    
 
 
 
-        .product__action
-            a.product__compare(href="#")
-            a.product__liked(href="#")
+        //- .product__action
+        //-     a.product__compare(href="#")
+        //-     a.product__liked(href="#")
