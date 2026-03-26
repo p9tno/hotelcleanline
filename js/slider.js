@@ -56,6 +56,35 @@ $(document).ready(function() {
         }
     });
 
+    const partners = new Swiper('.partners_swiper_js', {
+        slidesPerView: 2,
+        spaceBetween: 6,
+        speed: speed,
+        loop: false,
+        autoplay: {
+            delay: delay,
+        },
+        
+        navigation: {
+            nextEl: '.icon_arrow_right_sm',
+            prevEl: '.icon_arrow_left_sm',
+        },
+
+        pagination: {
+            el: '.partners_pagination_js',
+            clickable: true,
+        },
+        
+        breakpoints: {
+            768: {
+                spaceBetween: 40,
+                slidesPerView: 4,
+                simulateTouch: false,
+            },
+
+        }
+    });
+
     const hscroll = new Swiper('.hscroll_swiper_js', {
         slidesPerView: 1,
         spaceBetween: 6,

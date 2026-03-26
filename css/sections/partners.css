@@ -1,0 +1,7 @@
+.partners__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 16.875em;
+}
