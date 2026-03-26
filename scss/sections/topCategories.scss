@@ -5,9 +5,7 @@
       
     }
     &__grid {
-        margin-top: 2em;
         @media (min-width: 768px) {
-            margin-top: 3.125em;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 1.25em;

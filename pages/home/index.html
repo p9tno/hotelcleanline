@@ -98,18 +98,57 @@
           <div class="container_center container_center_sm">
             <h2 class="section__title">Заголовок секции основных категорий</h2>
             <div class="section__desc">Описание секции основных категорий</div>
-            <div class="topCategories__grid"><a class="topCategories__item" href="#">
-                <div class="topCategories__img img"><img src="../../../img/firstscreen_1.webp" alt=""/></div>
-                <div class="topCategories__title">Продукт 1</div></a><a class="topCategories__item" href="#">
-                <div class="topCategories__img img"><img src="../../../img/firstscreen_2.webp" alt=""/></div>
-                <div class="topCategories__title">Продукт 2</div></a><a class="topCategories__item" href="#">
-                <div class="topCategories__img img"><img src="../../../img/firstscreen_3.webp" alt=""/></div>
-                <div class="topCategories__title">Продукт 3</div></a>
+            <div class="section__wrap">
+              <div class="topCategories__grid"><a class="topCategories__item" href="#">
+                  <div class="topCategories__img img"><img src="../../../img/firstscreen_1.webp" alt=""/></div>
+                  <div class="topCategories__title">Продукт 1</div></a><a class="topCategories__item" href="#">
+                  <div class="topCategories__img img"><img src="../../../img/firstscreen_2.webp" alt=""/></div>
+                  <div class="topCategories__title">Продукт 2</div></a><a class="topCategories__item" href="#">
+                  <div class="topCategories__img img"><img src="../../../img/firstscreen_3.webp" alt=""/></div>
+                  <div class="topCategories__title">Продукт 3</div></a>
+              </div>
             </div>
             <div class="section__btn"> <a class="btn" href="#">Кнопка секции</a></div>
           </div>
         </section>
         <!-- end topCategories-->
+        <!-- begin homeProducts-->
+        <section class="homeProducts section" id="homeProducts">
+          <div class="container_center">
+            <h2 class="section__title">Каталог товаров</h2>
+            <div class="section__desc">Описание секции, если нужно</div>
+            <div class="section__wrap">
+              <div class="product__grid">
+                <div class="product instock">
+                  <div class="product__sell img"><img src="../../img/sell.svg" alt="image" loading="lazy"/><span>-15%</span></div>
+                  <div class="product__header"><a class="product__img img" href="#"><img src="../../img/product_1.png" alt="image" loading="lazy"/></a></div>
+                  <div class="product__body">
+                    <div class="product__head">
+                      <div class="product__code">Код товара: 012 452</div>
+                      <div class="product__boolean">В наличии</div>
+                    </div><a class="product__title" href="#">Звуковая плата Arduino MXC-40</a>
+                    <ul class="product__cat list">
+                      <li><span>Чип:</span><span>ARD-234</span></li>
+                      <li><span>Мощность:</span><span>20Вт</span></li>
+                      <li><span>Применение:</span><span>Проф. область</span></li>
+                    </ul>
+                  </div>
+                  <div class="product__footer">
+                    <div class="product__price">
+                      <del><span class="woocommerce-Price-amount amount">
+                          <bdi>2 200 <span class="woocommerce-Price-currencySymbol">₽<span></bdi></span></del><ins><span class="woocommerce-Price-amount amount">
+                          <bdi>2 000 <span class="woocommerce-Price-currencySymbol">₽<span></bdi></span></ins>
+                    </div>
+                    <div class="product__button"><a class="btn" href="#"><span>Купить</span><i class="icon_basket"></i></a></div>
+                    <div class="product__action"><a class="product__compare" href="#"></a><a class="product__liked" href="#"></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section__btn"> <a class="btn" href="#">Все товары</a></div>
+          </div>
+        </section>
+        <!-- end homeProducts-->
         <!-- begin media-->
         <section class="media media_swiper section" id="mediaSlider">
           <div class="container_center">

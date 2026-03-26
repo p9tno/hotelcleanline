@@ -43,6 +43,10 @@ $animation-duration: 1.5s;
             align-items: flex-end;
             padding: 7.5em;
         }
+        @media (min-width: 1441px) {
+          border-radius: 0.625em;
+          overflow: hidden;
+        }
     }
 
     &__img {

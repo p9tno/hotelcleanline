@@ -41,18 +41,39 @@ block content
         .container_center.container_center_sm
             h2.section__title Заголовок секции основных категорий
             .section__desc Описание секции основных категорий
-            .topCategories__grid
-                each item in [{img: '1', title: 'Продукт 1'}, {img: '2', title: 'Продукт 2'}, {img: '3', title: 'Продукт 3'}, ]
-                    a.topCategories__item(href="#")
-                        .topCategories__img.img
-                            img(src="../../../img/firstscreen_"+item.img+".webp", alt="")
-                        .topCategories__title!=item.title
+            .section__wrap
+                .topCategories__grid
+                    each item in [{img: '1', title: 'Продукт 1'}, {img: '2', title: 'Продукт 2'}, {img: '3', title: 'Продукт 3'}, ]
+                        a.topCategories__item(href="#")
+                            .topCategories__img.img
+                                img(src="../../../img/firstscreen_"+item.img+".webp", alt="")
+                            .topCategories__title!=item.title
 
             .section__btn 
                 a.btn(href="#") Кнопка секции
               
     
     // end topCategories
+
+    // begin homeProducts
+    section#homeProducts.homeProducts.section
+        .container_center
+            h2.section__title Каталог товаров
+            .section__desc Описание секции, если нужно
+            .section__wrap
+                .product__grid
+                    include ../../products/product.pug
+                    //- include ../products/productOfStock.pug
+                    //- include ../products/productSell.pug
+                    //- include ../products/product.pug
+                    //- include ../products/product.pug
+
+                    //- include ../products/pagination.pug
+            .section__btn 
+                a.btn(href="#") Все товары
+               
+    
+    // end homeProducts
 
     // begin media
     section#mediaSlider.media.media_swiper.section

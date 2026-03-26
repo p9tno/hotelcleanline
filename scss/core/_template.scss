@@ -58,6 +58,13 @@ body {
 		}
 	}
 
+	&__wrap {
+		margin-top: 2em;
+		@media (min-width: 768px) {
+			margin-top: 3.125em;
+		}
+	}
+
 	&__title {
 		margin: 0;
 		font-family: $second_font_family;
@@ -112,7 +119,7 @@ body {
 		&.ta_l {
 			text-align: left;
 		}
-		
+
 		> * {
 			&:first-child {
 				margin-top: 0;
