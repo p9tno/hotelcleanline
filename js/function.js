@@ -534,7 +534,7 @@ $(document).ready(function() {
         $(".scroll_js").on("click", function (event) {
             event.preventDefault();
             let id  = $(this).attr('href');
-            // console.log(id);
+            console.log(id);
 
             let top = $(id).offset().top;
             $('body,html').animate({scrollTop: top}, 1500);
