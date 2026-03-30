@@ -382,6 +382,11 @@ body {
             width: 100%;
             border-collapse: collapse;
             font-size: 1rem;
+			.section__title {
+				text-align: left;
+				font-size: 1.25em;
+				font-weight: 400;
+			}
         }
         th {
             background: #1e293b;
@@ -417,9 +422,10 @@ body {
             background: #c7d2fe;
             text-decoration: underline;
         }
-        .mood {
-            font-weight: 500;
-        }
+        // .mood {
+        //     font-weight: 400;
+        // }
         .best-for {
             color: #334155;
+			font-size: 0.875em;
         }
