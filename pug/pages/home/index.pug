@@ -23,7 +23,7 @@ block content
                                         .firstscreen__desc
                                             p=item.desc
                                         .firstscreen__btn
-                                            a.btn.btn_lg(href="") посмотреть
+                                            a.btn(href="") посмотреть
 
                     .swiper-pagination.firstscreen__pagination
                                     
@@ -54,6 +54,32 @@ block content
               
     
     // end topCategories
+
+    // begin partners
+    section#partners.partners.section
+        .container_center
+            .partners__content
+                h2.section__title Заголовок
+
+                .section__desc Описание секции 
+                .partners__swiper
+                    .swiper.partners_swiper_js
+                        .swiper-wrapper
+                            each item in ['Гостиница 1','Гостиница 2','Гостиница 3','Гостиница 4','Гостиница 5','Гостиница 6']
+                                .swiper-slide.partners__slide
+                                    .partners__title=item
+                                    .partners__desc короткое описание
+                                
+                        //- .swiper-nav.partners__nav.desktop
+                        //-     i.swiper-arrow.icon_arrow_left_sm
+                        //-     i.swiper-arrow.icon_arrow_right_sm
+
+                        .swiper-pagination.partners__pagination
+           
+                .section__btn
+                        a.btn(href="#") кнопка
+    
+    // end partners
 
     // begin homeProducts
     section#homeProducts.homeProducts.section
@@ -131,31 +157,7 @@ block content
     
     // end hscroll
 
-    // begin partners
-    section#partners.partners.section
-        .container_center
-            .partners__content
-                h2.section__title Заголовок
 
-                .section__desc Описание секции 
-                .partners__swiper
-                    .swiper.partners_swiper_js
-                        .swiper-wrapper
-                            each item in ['Гостиница 1','Гостиница 2','Гостиница 3','Гостиница 4','Гостиница 5','Гостиница 6']
-                                .swiper-slide.partners__slide
-                                    .partners__title=item
-                                    .partners__desc короткое описание
-                                
-                        //- .swiper-nav.partners__nav.desktop
-                        //-     i.swiper-arrow.icon_arrow_left_sm
-                        //-     i.swiper-arrow.icon_arrow_right_sm
-
-                        .swiper-pagination.partners__pagination
-           
-                .section__btn
-                        a.btn(href="#") кнопка
-    
-    // end partners
 
     // begin banner
     section#banner.banner.section
