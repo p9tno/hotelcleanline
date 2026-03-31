@@ -9,7 +9,7 @@ $transition: 0.5s;
 	z-index: 10;
 
 	padding: 0.63em 0;
-	background-color: $color_white;
+	background-color: $color_light;
 	
 	@media (min-width: 768px) {
 		padding: 1.532em 0;
@@ -76,7 +76,7 @@ $transition: 0.5s;
 
 			&:hover {
 			  @media (min-width: 768px) {
-				color: $color_warning;
+				color: $color_primary;
 			  }
 			}
 		}
@@ -132,7 +132,7 @@ $transition: 0.5s;
 				&:after,
 				&:before {
 					content: '';
-					border-top: 0.125em solid $color_warning;
+					border-top: 0.125em solid $color_primary;
 				}
 
 				&:before {
@@ -156,6 +156,7 @@ $transition: 0.5s;
 .stiky {
 	position: fixed;
 	padding: 1em 0;
+	background-color: $color_white;
 	box-shadow: 0 2px 4px -2px rgba($color_primary, 0.125);
 	-webkit-animation-name: showMenu;
 	animation-name: showMenu;
@@ -237,7 +238,8 @@ $transition: 0.5s;
 			position: relative;
 			text-decoration: none;
 
-			font-weight: 500;
+			font-family: $second_font_family;
+			font-weight: 300;
 			font-size: 1.5em;
 			color: $main_color;
 			
@@ -267,7 +269,7 @@ $transition: 0.5s;
 		@media (min-width: 768px) {
 			&:hover {
 				a {
-					color: $color_warning;
+					color: $color_primary;
 		
 					&:after {
 						width: 100%;
@@ -312,7 +314,7 @@ $transition: 0.5s;
 
 		&.current-menu-item {
 			a {
-				color: $color_warning;
+				color: $color_primary;
 				&:after {
 					width: 75%;
 					@media (min-width: 768px) {

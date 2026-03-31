@@ -500,8 +500,9 @@ template {
 }
 
 body {
-  font-family: "Montserrat";
-  color: #9F9F9F;
+  font-family: "Roboto";
+  color: #333541;
+  background: #fcfcfd;
   line-height: 1.2;
   font-size: calc(.042666666 * 100vw + 0px);
 }
@@ -553,7 +554,7 @@ body {
 }
 @media (min-width: 768px) {
   .section:first-child {
-    padding-top: 6.25em;
+    padding-top: 7.25em;
   }
 }
 .section__wrap {
@@ -566,10 +567,10 @@ body {
 }
 .section__title {
   margin: 0;
-  font-family: "Montserrat";
-  color: #333333;
+  font-family: "Oswald";
+  color: #9F5434;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1.75em;
   text-align: center;
 }
@@ -588,7 +589,7 @@ body {
   margin-top: 0.625em;
   text-align: center;
   font-size: 1.25em;
-  font-weight: 500;
+  font-weight: 400;
 }
 @media (min-width: 768px) {
   .section__desc {
@@ -721,18 +722,18 @@ body {
   font-weight: 600;
 }
 .section__content p i {
-  color: #B88E2F;
+  color: #CFA999;
 }
 .section__content ul {
   list-style: none;
   line-height: 1.4;
 }
 .section__content ul i {
-  color: #B88E2F;
+  color: #CFA999;
 }
 
 .section__title b {
-  color: #B88E2F;
+  color: #CFA999;
   font-weight: 400;
 }
 .section__title.weight_light {
@@ -906,7 +907,7 @@ tr:hover {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #B88E2F;
+  background: #CFA999;
   transform: scale(0);
   transform-origin: center center;
   animation: preloader-4-anim 2s infinite linear;
@@ -967,7 +968,7 @@ tr:hover {
   width: 3.75em;
   height: 3.75em;
   border-radius: 0.625em;
-  background-color: #B88E2F;
+  background-color: #CFA999;
   color: #ffffff;
   font-size: 0.75em;
 }
@@ -1001,17 +1002,17 @@ tr:hover {
 @media (min-width: 768px) {
   .soc__link:hover .soc__icon {
     transform: translateX(-50%) scale(1.2);
-    color: rgba(184, 142, 47, 0.1);
+    color: rgba(207, 169, 153, 0.1);
   }
   .soc__link:hover .soc__label {
-    color: #B88E2F;
+    color: #CFA999;
   }
 }
 .soc__label {
   position: relative;
   z-index: 1;
   text-decoration: none;
-  color: #9F9F9F;
+  color: #333541;
   font-size: 1.375em;
   font-weight: 500;
 }
@@ -1022,7 +1023,7 @@ tr:hover {
   transform: translateX(-50%) scale(1);
   display: block;
   font-size: 3em;
-  color: rgba(159, 159, 159, 0.1);
+  color: rgba(51, 53, 65, 0.1);
 }
 @media (min-width: 768px) {
   .soc__icon {
@@ -1039,7 +1040,7 @@ tr:hover {
   width: 100%;
   z-index: 10;
   padding: 0.63em 0;
-  background-color: #ffffff;
+  background-color: #DFDFE5;
 }
 @media (min-width: 768px) {
   .header {
@@ -1095,13 +1096,13 @@ tr:hover {
   }
 }
 .header .action a {
-  color: #9F9F9F;
+  color: #333541;
   font-size: 1.5em;
   text-decoration: none;
 }
 @media (min-width: 768px) {
   .header .action a:hover {
-    color: #B88E2F;
+    color: #9F5434;
   }
 }
 @media (max-width: 767px) {
@@ -1111,7 +1112,7 @@ tr:hover {
     right: 1em;
     width: 1.5em;
     height: 0.875em;
-    color: #9F9F9F;
+    color: #333541;
     border: 0.125em solid;
     border-left: 0;
     border-right: 0;
@@ -1145,7 +1146,7 @@ tr:hover {
   }
   .header__toggle_open:after, .header__toggle_open:before {
     content: "";
-    border-top: 0.125em solid #B88E2F;
+    border-top: 0.125em solid #9F5434;
   }
   .header__toggle_open:before {
     transform: rotate(45deg);
@@ -1158,7 +1159,8 @@ tr:hover {
 .stiky {
   position: fixed;
   padding: 1em 0;
-  box-shadow: 0 2px 4px -2px rgba(51, 51, 51, 0.125);
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px -2px rgba(159, 84, 52, 0.125);
   animation-name: showMenu;
   animation-duration: 0.5s;
   animation-fill-mode: both;
@@ -1225,9 +1227,10 @@ tr:hover {
 .menu-item a {
   position: relative;
   text-decoration: none;
-  font-weight: 500;
+  font-family: "Oswald";
+  font-weight: 300;
   font-size: 1.5em;
-  color: #9F9F9F;
+  color: #333541;
 }
 @media (min-width: 768px) {
   .menu-item a {
@@ -1253,7 +1256,7 @@ tr:hover {
 }
 @media (min-width: 768px) {
   .menu-item:hover a {
-    color: #B88E2F;
+    color: #9F5434;
   }
   .menu-item:hover a:after {
     width: 100%;
@@ -1275,7 +1278,7 @@ tr:hover {
   }
 }
 .menu-item.current-menu-item a {
-  color: #B88E2F;
+  color: #9F5434;
 }
 .menu-item.current-menu-item a:after {
   width: 75%;
@@ -1305,7 +1308,7 @@ tr:hover {
 @media (min-width: 768px) {
   .firstscreen__swiper {
     width: 90em;
-    height: 45em;
+    height: 40em;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1358,34 +1361,31 @@ tr:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .firstscreen__content {
   position: relative;
-  background-color: #faf3ed;
-  border-radius: 0.625em;
   width: 18.75em;
   padding: 1.5em 1.25em;
 }
 @media (min-width: 768px) {
   .firstscreen__content {
     width: 40em;
-    padding: 3.75em 2.5em 2.5em 2.5em;
+    padding: 0;
   }
 }
 .firstscreen__title {
   margin: 0;
-  font-family: "Montserrat";
-  color: #B88E2F;
+  font-family: "Oswald";
+  color: #ffffff;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1.75em;
   opacity: 0;
 }
 @media (min-width: 768px) {
   .firstscreen__title {
     font-size: 3.25em;
-    font-weight: 700;
   }
 }
 .swiper-slide-active .firstscreen__title {
@@ -1397,6 +1397,7 @@ tr:hover {
 .firstscreen__desc {
   margin-top: 1.125em;
   opacity: 0;
+  color: #ffffff;
 }
 .firstscreen__desc > *:first-child {
   margin-top: 0;
@@ -1405,7 +1406,6 @@ tr:hover {
   margin-bottom: 0;
 }
 .firstscreen__desc p {
-  font-weight: 500;
   font-size: 1.125em;
 }
 .swiper-slide-active .firstscreen__desc {
@@ -1421,7 +1421,7 @@ tr:hover {
 }
 @media (min-width: 768px) {
   .firstscreen__btn {
-    margin-top: 2.8125em;
+    margin-top: 2.5em;
   }
 }
 .swiper-slide-active .firstscreen__btn {
@@ -1520,7 +1520,7 @@ tr:hover {
 .topCategories__title {
   font-size: 1.25em;
   font-weight: 600;
-  color: #333333;
+  color: #9F5434;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1728,7 +1728,7 @@ tr:hover {
   margin-bottom: 0;
 }
 .media__label span {
-  color: #B88E2F;
+  color: #333541;
   font-weight: 500;
   font-size: 0.875em;
 }
@@ -1740,7 +1740,7 @@ tr:hover {
 .media__label p {
   font-size: 1.125em;
   font-weight: 600;
-  color: #333333;
+  color: #9F5434;
   margin-top: 0.375em;
 }
 @media (min-width: 768px) {
@@ -1756,7 +1756,6 @@ tr:hover {
 }
 
 .partners {
-  background: #faf3ed;
   overflow: hidden;
 }
 .partners__swiper {
@@ -1792,6 +1791,7 @@ tr:hover {
   min-height: 6em;
   background: #ffffff;
   border-radius: 0.625em;
+  box-shadow: 0 2px 4px -2px rgba(159, 84, 52, 0.125);
 }
 @media (min-width: 768px) {
   .partners__slide {
@@ -1800,24 +1800,22 @@ tr:hover {
 }
 .partners__title {
   margin: 0;
-  font-family: "Montserrat";
-  color: #333333;
+  font-family: "Oswald";
+  color: #9F5434;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 0.875em;
   text-align: center;
 }
 @media (min-width: 768px) {
   .partners__title {
     font-size: 1.5em;
-    font-weight: 700;
   }
 }
 .partners__desc {
   margin-top: 0.5em;
   text-align: center;
   font-size: 0.75em;
-  font-weight: 500;
 }
 @media (min-width: 768px) {
   .partners__desc {
@@ -1833,6 +1831,7 @@ tr:hover {
     margin-top: 2.5em;
   }
 }
+
 .banner__slide {
   position: relative;
   overflow: hidden;
@@ -1904,7 +1903,7 @@ tr:hover {
   width: 100%;
   border-radius: 0.625em;
   background: #ffffff;
-  box-shadow: rgba(159, 159, 159, 0.4) 0 2px 4px 0;
+  box-shadow: rgba(51, 53, 65, 0.4) 0 2px 4px 0;
   font-size: 0.75em;
 }
 @media (min-width: 768px) {
@@ -1952,7 +1951,7 @@ tr:hover {
   justify-content: center;
   width: 2em;
   height: 2em;
-  background: #ff1a1a;
+  background: #C05A5A;
   color: #ffffff;
   border-radius: 0.3125em;
   text-align: center;
@@ -2063,7 +2062,7 @@ tr:hover {
   }
 }
 .product__liked.active:after {
-  color: #03a9f4;
+  color: #5F8B9F;
 }
 .product__header {
   position: relative;
@@ -2100,22 +2099,22 @@ tr:hover {
 .product__code {
   font-size: 0.75em;
   font-weight: 500;
-  color: #9F9F9F;
+  color: #333541;
 }
 .product__boolean {
   font-size: 0.75em;
   font-weight: 600;
-  color: #36a566;
+  color: #3A7B5A;
 }
 .outofstock .product__boolean {
-  color: #ff1a1a;
+  color: #C05A5A;
 }
 .product__title {
   display: block;
-  font-family: "Montserrat";
+  font-family: "Oswald";
   font-size: 1.125em;
   font-weight: 600;
-  color: #333333;
+  color: #9F5434;
   text-decoration: none;
   transition: none;
   line-clamp: 1;
@@ -2153,7 +2152,7 @@ tr:hover {
 }
 .product__cat li span:last-child {
   flex-grow: 1;
-  color: #333333;
+  color: #9F5434;
   font-weight: 600;
 }
 @media (max-width: 767px) {
@@ -2203,7 +2202,7 @@ tr:hover {
 }
 .product__price {
   line-height: 1;
-  color: #333333;
+  color: #333541;
   display: flex;
   flex-direction: column-reverse;
   gap: 0.25em;
@@ -2211,7 +2210,7 @@ tr:hover {
   font-weight: 500;
 }
 .product__price del {
-  color: #9F9F9F;
+  color: #333541;
   display: none;
   font-size: 0.875em;
 }
@@ -2224,7 +2223,6 @@ tr:hover {
   display: block;
 }
 .product__price ins {
-  color: #333333;
   text-decoration: none;
 }
 .product__button {
@@ -2236,7 +2234,7 @@ tr:hover {
 .footer {
   position: relative;
   padding: 2.5em 0;
-  background-color: #faf3ed;
+  background-color: #DFDFE5;
 }
 @media (min-width: 768px) {
   .footer {
@@ -2280,11 +2278,11 @@ tr:hover {
 .footer__links a {
   text-decoration: none;
   font-size: 0.875em;
-  color: #9F9F9F;
+  color: #333541;
 }
 @media (min-width: 768px) {
   .footer__links a:hover {
-    color: #B88E2F;
+    color: #CFA999;
   }
 }
 .footer__soc {
@@ -2378,8 +2376,8 @@ input[type=url],
 textarea {
   background-color: #fff;
   border: 0.0625em solid #ddd;
-  font-family: "Montserrat";
-  color: #9F9F9F;
+  font-family: "Roboto";
+  color: #333541;
   padding: 0.5em 1em;
   outline: none;
   font-size: 1em;
@@ -2605,7 +2603,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 }
 .select2-container--default .select2-results__option--selected {
   background: rgba(0, 110, 255, 0.19);
-  color: #9F9F9F;
+  color: #333541;
 }
 .select2-container--default .select2-dropdown {
   position: absolute;
@@ -2619,8 +2617,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .select2-container--default .select2-selection {
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
-  font-family: "Montserrat";
-  color: #9F9F9F;
+  font-family: "Roboto";
+  color: #333541;
   padding: 0.65em 1em;
   outline: none;
   font-weight: 400;
@@ -2647,7 +2645,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   line-height: 1;
   padding: 0 1em 0 0;
-  color: #9F9F9F;
+  color: #333541;
 }
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
   color: #ddd;
@@ -2714,8 +2712,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .select2-container--default.select2-container--disabled .select2-selection {
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
-  font-family: "Montserrat";
-  color: #9F9F9F;
+  font-family: "Roboto";
+  color: #333541;
   padding: 0.971em 1.175em;
   outline: none;
   font-weight: 400;
@@ -2752,7 +2750,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   margin: 0 0.75em;
   width: 0.3125em;
   height: 0.3125em;
-  background-color: #B88E2F;
+  background-color: #CFA999;
   font-size: 0.6em;
 }
 @media (min-width: 768px) {
@@ -2761,7 +2759,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   }
 }
 .breadcrumbs .kama_breadcrumbs .kb_title {
-  color: #9F9F9F;
+  color: #333541;
   font-weight: 600;
 }
 
@@ -2772,15 +2770,15 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   border: 1px solid;
   outline: none;
   max-width: 100%;
-  font-family: "Montserrat";
+  font-family: "Oswald";
   font-size: 0.75em;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1;
   text-decoration: none;
   text-align: center;
   color: #ffffff;
-  border-color: #B88E2F;
-  background-color: #B88E2F;
+  border-color: #CFA999;
+  background-color: #CFA999;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -2791,16 +2789,16 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 }
 @media (min-width: 768px) {
   .btn:hover {
-    color: #B88E2F;
-    border-color: #B88E2F;
+    color: #CFA999;
+    border-color: #CFA999;
     background-color: transparent;
   }
 }
 @media (min-width: 768px) {
   .btn:active {
     color: #ffffff;
-    border-color: #B88E2F;
-    background-color: #B88E2F;
+    border-color: #CFA999;
+    background-color: #CFA999;
   }
 }
 .btn:disabled {
@@ -2812,21 +2810,21 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   text-transform: uppercase;
 }
 .btn_border {
-  color: #B88E2F;
-  border-color: #B88E2F;
+  color: #CFA999;
+  border-color: #CFA999;
   background-color: transparent;
 }
 @media (min-width: 768px) {
   .btn_border:hover {
     color: #ffffff;
-    border-color: #B88E2F;
-    background-color: #B88E2F;
+    border-color: #CFA999;
+    background-color: #CFA999;
   }
 }
 @media (min-width: 768px) {
   .btn_border:active {
-    color: #B88E2F;
-    border-color: #B88E2F;
+    color: #CFA999;
+    border-color: #CFA999;
     background-color: transparent;
   }
 }
@@ -2948,7 +2946,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   display: inline-block;
 }
 .drop__toggle {
-  border: 0.0625em solid #9F9F9F;
+  border: 0.0625em solid #333541;
   padding: 0.3125em 1em;
   position: relative;
   z-index: 1;
@@ -2957,7 +2955,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   align-items: center;
   border-radius: 1em;
   width: 100%;
-  background-color: #333333;
+  background-color: #9F5434;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -2975,7 +2973,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .drop__list {
   position: absolute;
   width: 100%;
-  box-shadow: 0 0 0.25em rgba(159, 159, 159, 0.3);
+  box-shadow: 0 0 0.25em rgba(51, 53, 65, 0.3);
   border-radius: 0 0 0.3125em 0.3125em;
   height: 0;
   overflow: hidden;
@@ -2990,7 +2988,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 }
 .drop__item {
   background: #ffffff;
-  border-bottom: 0.0625em solid #9F9F9F;
+  border-bottom: 0.0625em solid #333541;
   padding: 0.3125em 1em;
 }
 .drop__item:hover {
@@ -3022,7 +3020,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #9F9F9F;
+  color: #333541;
 }
 .modal-close:after, .modal-close:before {
   content: "";
@@ -3178,7 +3176,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   height: 3em;
   border-radius: 100%;
   background-color: #ffffff;
-  color: #B88E2F;
+  color: #CFA999;
   opacity: 1;
   cursor: pointer;
   outline: none;
@@ -3190,7 +3188,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     transition: 0.5s;
   }
   .swiper-arrow:hover:not(.swiper-button-disabled) {
-    background-color: #B88E2F;
+    background-color: #CFA999;
     color: #ffffff;
   }
 }
@@ -3241,7 +3239,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   width: 0.6875em;
   height: 0.6875em;
   border-radius: 100%;
-  background: rgba(184, 142, 47, 0.75);
+  background: rgba(207, 169, 153, 0.75);
   margin: 0 0.625em !important;
 }
 .swiper-pagination-bullet:before {
@@ -3252,14 +3250,14 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   border: 0.0625em solid;
-  border-color: #B88E2F;
+  border-color: #CFA999;
   width: 1.25em;
   height: 1.25em;
   border-radius: 100%;
   opacity: 0;
 }
 .swiper-pagination-bullet-active {
-  background: #B88E2F;
+  background: #CFA999;
 }
 .swiper-pagination-bullet-active:before {
   opacity: 1;

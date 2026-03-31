@@ -3,7 +3,9 @@
 body {
 	font-family: $main_font_family;
 	color: $main_color;
+	background: rgba($main_bg, 1);
 	line-height: $main_line_height;
+	
 	font-size: calc(.042666666 * 100vw + 0px);
 
 	@media (min-width: 768px) {
@@ -13,10 +15,6 @@ body {
 	@media (min-width: 1440px) {
 		font-size: 16px;
 	}
-
-	// @media (min-width: 1920px) {
-	// 	font-size: 16px;
-	// }
 
 }
 
@@ -54,7 +52,7 @@ body {
 	&:first-child {
 		padding-top: 3.25em;
 		@media (min-width: 768px) {
-			padding-top: 6.25em;
+			padding-top: 7.25em;
 		}
 	}
 
@@ -70,7 +68,7 @@ body {
 		font-family: $second_font_family;
 		color: $color_primary;
 		line-height: 1.1;
-		font-weight: 600;
+		font-weight: 300;
 		font-size: 1.75em;
 		text-align: center;
 		@media (min-width: 768px) {
@@ -90,7 +88,7 @@ body {
 		margin-top: 0.625em;
 		text-align: center;
 		font-size: 1.25em;
-		font-weight: 500;
+		font-weight: 400;
 		@media (min-width: 768px) {
 			font-size: 1.5em;
 		}

@@ -1,6 +1,5 @@
 .media {
     overflow: hidden;
-    // background: $color_warning_light;
     
     // start slider
     .swiper {
@@ -113,7 +112,7 @@
 		}
 
         span {
-            color: $color_warning;
+            color: $main_color;
             font-weight: 500;
             font-size: 0.875em;
             @media (min-width: 768px) {

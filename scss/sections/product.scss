@@ -631,7 +631,8 @@
     &__price {
         line-height: 1;
 
-        color: $color_primary;
+        // color: $color_primary;
+        color: $main_color;
 
         display: flex;
         flex-direction: column-reverse;
@@ -653,7 +654,7 @@
         }
 
         ins {
-            color: $color_primary;
+            // color: $color_primary;
             text-decoration: none;
 
         }

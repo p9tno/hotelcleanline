@@ -1,44 +1,26 @@
 /* Global variables */
 /* ======================================================================== */
-$main_font_family: "Montserrat";
-$second_font_family: "Montserrat";
+$main_font_family: "Roboto";
+$second_font_family: "Oswald";
 $main_line_height: 1.2;
 $main_font_size: 1em;
 
 $container_width: 79.25em;
 $container_width_sm: 75.75em;
 
-$footer_height: auto;
 
-// Color collection for elements
-$main_color: #9F9F9F;
-$color_primary: #333333;
+$main_bg: #FCFCFD;
 
-$color_warning: #B88E2F;
-$color_warning_light: #faf3ed;
-
-
-$color_success: #36a566;
-$color_info: #03a9f4;
-$color_danger: #ff1a1a;
+$main_color: #333541;
+$color_primary: #9F5434;
+$color_warning: #CFA999;
+$color_light: #DFDFE5;
+$color_success: #3A7B5A;
+$color_info: #5F8B9F;
+$color_danger: #C05A5A;
 
 $color_white: #ffffff;
 $color_black: #000000;
-
-
-// $color1: #e5d4b6;
-// $color2: #d8bd92;
-// $color3: #c99551;
-// $color4: #af5039;
-// $color5: #c09f82;
-
-
-// $color6: #eae7e4;
-// $color6: #d0c2b8;
-// $color6: #bfbcb9;
-// $color6: #93918d;
-// $color6: #3b3631;
-
 
 /* Grid */
 /* ======================================================================== */
