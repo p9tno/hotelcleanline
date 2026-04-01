@@ -839,11 +839,11 @@ body {
   border-radius: 0.625em;
   background-color: #CFA999;
   color: #ffffff;
-  font-size: 0.75em;
+  font-size: 0.625em;
 }
 @media (min-width: 768px) {
   .toTop a {
-    font-size: 1em;
+    font-size: 0.75em;
   }
 }
 .toTop i {
@@ -871,7 +871,7 @@ body {
 @media (min-width: 768px) {
   .soc__link:hover .soc__icon {
     transform: translateX(-50%) scale(1.2);
-    color: rgba(207, 169, 153, 0.1);
+    color: rgba(207, 169, 153, 0.2);
   }
   .soc__link:hover .soc__label {
     color: #CFA999;
