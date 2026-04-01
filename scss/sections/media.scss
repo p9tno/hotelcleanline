@@ -113,18 +113,19 @@
 
         span {
             color: $main_color;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 0.875em;
             @media (min-width: 768px) {
-              font-size: 1em;
+                font-size: 1em;
             }
         }
-
+        
         p {
+            font-family: $second_font_family;
 			font-size: 1.125em;
-			font-weight: 600;
+			font-weight: 300;
             color: $color_primary;
-            margin-top: 0.375em;
+            margin-top: 0.25em;
 			
 			
 			@media (min-width: 768px) {

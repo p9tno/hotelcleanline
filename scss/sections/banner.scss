@@ -26,7 +26,7 @@
             position: absolute;   
             top: 0;
             left: 0;
-            background-color: rgba($color_black, 0.25);
+            background-color: rgba($color_black, 0.3);
         }
     }
 
@@ -57,11 +57,11 @@
     &__title {
         margin: 0;
         line-height: 1.1;
-		font-weight: 600;
+        font-family: $second_font_family;
+		font-weight: 200;
 		font-size: 1.25em;
 		@media (min-width: 768px) {
 			font-size: 2em;
-			font-weight: 700;
 		}
 
     }
@@ -69,6 +69,7 @@
     &__desc {
         margin-top: 1em;
         font-size: 0.875em;
+        font-weight: 300;
         @media (min-width: 768px) {
           font-size: 1em;
         }

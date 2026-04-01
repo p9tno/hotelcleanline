@@ -88,12 +88,10 @@ block content
             .section__desc Описание секции, если нужно
             .section__wrap
                 .product__grid
-                    each item in [1,2,3]
+                    each item in [1,2,3,4]
                         
                         include ../../products/product.pug
-                        include ../../products/productOfStock.pug
-                        include ../../products/productSell.pug
-                        include ../../products/product.pug
+                
 
                         //- include ../products/pagination.pug
             .section__btn 

@@ -8,38 +8,73 @@
 /* ======================================================================== */
 @import "../fonts/icon/style.css";
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Montserrat/Montserrat-Light.eot?") format("eot"), url("../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Light.ttf") format("truetype"), url('../fonts/Montserrat/Montserrat-Light.svg#str-replace("Montserrat", " ", "_")') format("svg");
+  src: url("../fonts/Roboto/Roboto-Light.eot?") format("eot"), url("../fonts/Roboto/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Light.svg#str-replace("Roboto", " ", "_")') format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
-  src: url("../fonts/Montserrat/Montserrat-Regular.eot?") format("eot"), url("../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"), url('../fonts/Montserrat/Montserrat-Regular.svg#str-replace("Montserrat", " ", "_")') format("svg");
+  src: url("../fonts/Roboto/Roboto-Regular.eot?") format("eot"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Regular.svg#str-replace("Roboto", " ", "_")') format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: url("../fonts/Montserrat/Montserrat-Medium.eot?") format("eot"), url("../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype"), url('../fonts/Montserrat/Montserrat-Medium.svg#str-replace("Montserrat", " ", "_")') format("svg");
+  src: url("../fonts/Roboto/Roboto-Medium.eot?") format("eot"), url("../fonts/Roboto/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Medium.svg#str-replace("Roboto", " ", "_")') format("svg");
   font-display: swap;
 }
 @font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/Montserrat/Montserrat-SemiBold.eot?") format("eot"), url("../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype"), url('../fonts/Montserrat/Montserrat-SemiBold.svg#str-replace("Montserrat", " ", "_")') format("svg");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
-  src: url("../fonts/Montserrat/Montserrat-Bold.eot?") format("eot"), url("../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"), url('../fonts/Montserrat/Montserrat-Bold.svg#str-replace("Montserrat", " ", "_")') format("svg");
+  src: url("../fonts/Roboto/Roboto-Bold.eot?") format("eot"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.ttf") format("truetype"), url('../fonts/Roboto/Roboto-Bold.svg#str-replace("Roboto", " ", "_")') format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Oswald/Oswald-ExtraLight.eot?") format("eot"), url("../fonts/Oswald/Oswald-ExtraLight.woff2") format("woff2"), url("../fonts/Oswald/Oswald-ExtraLight.woff") format("woff"), url("../fonts/Oswald/Oswald-ExtraLight.ttf") format("truetype"), url('../fonts/Oswald/Oswald-ExtraLight.svg#str-replace("Oswald", " ", "_")') format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Oswald/Oswald-Light.eot?") format("eot"), url("../fonts/Oswald/Oswald-Light.woff2") format("woff2"), url("../fonts/Oswald/Oswald-Light.woff") format("woff"), url("../fonts/Oswald/Oswald-Light.ttf") format("truetype"), url('../fonts/Oswald/Oswald-Light.svg#str-replace("Oswald", " ", "_")') format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Oswald/Oswald-Regular.eot?") format("eot"), url("../fonts/Oswald/Oswald-Regular.woff2") format("woff2"), url("../fonts/Oswald/Oswald-Regular.woff") format("woff"), url("../fonts/Oswald/Oswald-Regular.ttf") format("truetype"), url('../fonts/Oswald/Oswald-Regular.svg#str-replace("Oswald", " ", "_")') format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Oswald/Oswald-Medium.eot?") format("eot"), url("../fonts/Oswald/Oswald-Medium.woff2") format("woff2"), url("../fonts/Oswald/Oswald-Medium.woff") format("woff"), url("../fonts/Oswald/Oswald-Medium.ttf") format("truetype"), url('../fonts/Oswald/Oswald-Medium.svg#str-replace("Oswald", " ", "_")') format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Oswald/Oswald-SemiBold.eot?") format("eot"), url("../fonts/Oswald/Oswald-SemiBold.woff2") format("woff2"), url("../fonts/Oswald/Oswald-SemiBold.woff") format("woff"), url("../fonts/Oswald/Oswald-SemiBold.ttf") format("truetype"), url('../fonts/Oswald/Oswald-SemiBold.svg#str-replace("Oswald", " ", "_")') format("svg");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/Oswald/Oswald-Bold.eot?") format("eot"), url("../fonts/Oswald/Oswald-Bold.woff2") format("woff2"), url("../fonts/Oswald/Oswald-Bold.woff") format("woff"), url("../fonts/Oswald/Oswald-Bold.ttf") format("truetype"), url('../fonts/Oswald/Oswald-Bold.svg#str-replace("Oswald", " ", "_")') format("svg");
   font-display: swap;
 }
 * {
@@ -659,12 +694,6 @@ body {
   display: block !important;
 }
 
-.bg {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .img img {
   display: block;
   width: 100%;
@@ -710,166 +739,6 @@ body {
   pointer-events: none !important;
   -webkit-user-drag: none !important;
   user-drag: none !important;
-}
-
-.section__content .weight_light {
-  font-weight: 300;
-}
-.section__content .weight_normal {
-  font-weight: 400;
-}
-.section__content .weight_bold {
-  font-weight: 600;
-}
-.section__content p i {
-  color: #CFA999;
-}
-.section__content ul {
-  list-style: none;
-  line-height: 1.4;
-}
-.section__content ul i {
-  color: #CFA999;
-}
-
-.section__title b {
-  color: #CFA999;
-  font-weight: 400;
-}
-.section__title.weight_light {
-  font-weight: 300 !important;
-}
-.section__title.weight_normal {
-  font-weight: 400 !important;
-}
-.section__title.weight_bold {
-  font-weight: 600 !important;
-}
-
-.inter {
-  font-family: "Inter", sans-serif !important;
-}
-.inter .section__title {
-  font-family: "Inter", sans-serif !important;
-}
-.inter .btn {
-  font-family: "Inter", sans-serif !important;
-}
-
-.m_r {
-  font-family: "Roboto", sans-serif !important;
-}
-.m_r .section__title {
-  font-family: "Montserrat", sans-serif !important;
-}
-.m_r .btn {
-  font-family: "Montserrat", sans-serif !important;
-}
-
-.open_pt_sans {
-  font-family: "Open Sans", sans-serif !important;
-}
-.open_pt_sans .section__title {
-  font-family: "PT Sans", sans-serif !important;
-}
-.open_pt_sans .btn {
-  font-family: "PT Sans", sans-serif !important;
-}
-
-.fira {
-  font-family: "Fira Sans", sans-serif !important;
-}
-.fira .section__title {
-  font-family: "Fira Sans Condensed", sans-serif !important;
-}
-.fira .btn {
-  font-family: "Fira Sans Condensed", sans-serif !important;
-}
-
-.manrope_work {
-  font-family: "Work Sans", sans-serif !important;
-}
-.manrope_work .section__title {
-  font-family: "Manrope", sans-serif !important;
-}
-.manrope_work .btn {
-  font-family: "Manrope", sans-serif !important;
-}
-
-.robo_to {
-  font-family: "Roboto", sans-serif !important;
-}
-.robo_to .section__title {
-  font-family: "Roboto Condensed", sans-serif !important;
-}
-.robo_to .btn {
-  font-family: "Roboto Condensed", sans-serif !important;
-}
-
-.roboto_oswald {
-  font-family: "Roboto", sans-serif !important;
-}
-.roboto_oswald .section__title {
-  font-family: "Oswald", sans-serif !important;
-}
-.roboto_oswald .btn {
-  font-family: "Oswald", sans-serif !important;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 1rem;
-}
-table .section__title {
-  text-align: left;
-  font-size: 1.25em;
-  font-weight: 400;
-}
-
-th {
-  background: #1e293b;
-  color: white;
-  font-weight: 600;
-  padding: 1rem;
-  text-align: left;
-  font-size: 1.1rem;
-}
-
-td {
-  padding: 1rem;
-  border-bottom: 1px solid #e2e8f0;
-  vertical-align: top;
-}
-
-tr:last-child td {
-  border-bottom: none;
-}
-
-tr:hover {
-  background: #f8fafc;
-}
-
-.class-link {
-  font-family: "Courier New", monospace;
-  font-weight: 600;
-  text-decoration: none;
-  background: #eef2ff;
-  padding: 0.2rem 0.6rem;
-  border-radius: 1rem;
-  display: inline-block;
-  transition: background 0.2s;
-  color: #1e40af;
-}
-
-.class-link:hover {
-  background: #c7d2fe;
-  text-decoration: underline;
-}
-
-.best-for {
-  color: #334155;
-  font-size: 0.875em;
 }
 
 .preloader {
@@ -1227,8 +1096,6 @@ tr:hover {
 .menu-item a {
   position: relative;
   text-decoration: none;
-  font-family: "Oswald";
-  font-weight: 300;
   font-size: 1.5em;
   color: #333541;
 }
@@ -1519,7 +1386,7 @@ tr:hover {
 }
 .topCategories__title {
   font-size: 1.25em;
-  font-weight: 600;
+  font-weight: 400;
   color: #9F5434;
   text-align: center;
 }
@@ -1729,7 +1596,7 @@ tr:hover {
 }
 .media__label span {
   color: #333541;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 0.875em;
 }
 @media (min-width: 768px) {
@@ -1738,10 +1605,11 @@ tr:hover {
   }
 }
 .media__label p {
+  font-family: "Oswald";
   font-size: 1.125em;
-  font-weight: 600;
+  font-weight: 300;
   color: #9F5434;
-  margin-top: 0.375em;
+  margin-top: 0.25em;
 }
 @media (min-width: 768px) {
   .media__label p {
@@ -1852,7 +1720,7 @@ tr:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .banner__content {
   position: relative;
@@ -1875,18 +1743,19 @@ tr:hover {
 .banner__title {
   margin: 0;
   line-height: 1.1;
-  font-weight: 600;
+  font-family: "Oswald";
+  font-weight: 200;
   font-size: 1.25em;
 }
 @media (min-width: 768px) {
   .banner__title {
     font-size: 2em;
-    font-weight: 700;
   }
 }
 .banner__desc {
   margin-top: 1em;
   font-size: 0.875em;
+  font-weight: 300;
 }
 @media (min-width: 768px) {
   .banner__desc {
@@ -1903,7 +1772,7 @@ tr:hover {
   width: 100%;
   border-radius: 0.625em;
   background: #ffffff;
-  box-shadow: rgba(51, 53, 65, 0.4) 0 2px 4px 0;
+  box-shadow: rgba(159, 84, 52, 0.1) 0 2px 4px 0;
   font-size: 0.75em;
 }
 @media (min-width: 768px) {
@@ -1917,7 +1786,7 @@ tr:hover {
 }
 @media (min-width: 768px) {
   .product_padding {
-    padding: 0 1em;
+    padding: 0 0.75em;
   }
 }
 .product_padding:last-child {
@@ -1941,128 +1810,6 @@ tr:hover {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1.25em;
   }
-}
-.product__sell {
-  position: absolute;
-  top: 0.625em;
-  left: 0.625em;
-  z-index: 1;
-  align-items: center;
-  justify-content: center;
-  width: 2em;
-  height: 2em;
-  background: #C05A5A;
-  color: #ffffff;
-  border-radius: 0.3125em;
-  text-align: center;
-  display: none;
-}
-.sale .product__sell {
-  display: flex;
-}
-.product__sell span {
-  position: relative;
-  font-weight: 600;
-  font-size: 0.625em;
-}
-.product__action {
-  position: absolute;
-  top: 0.65em;
-  right: 0.6em;
-  display: flex;
-  align-items: center;
-  gap: 1.2em;
-}
-@media (min-width: 768px) {
-  .product__action {
-    top: 1.9em;
-    right: 1.9em;
-  }
-}
-.product__action a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 2.5em;
-  height: 2.5em;
-  text-decoration: none;
-  transition: none;
-}
-.product__action a:after {
-  font-family: "icon";
-  font-size: 1.125em;
-  color: #5A6F88;
-}
-.product__action a.product__compare:after {
-  content: "";
-}
-.product__action a.product__liked:after {
-  content: "";
-}
-.product__action a.product__share:after {
-  content: "";
-}
-@media (min-width: 768px) {
-  .product__action a {
-    transition: 0.3s;
-  }
-}
-@media (max-width: 767px) {
-  .product__grid:not(.list) .product__action {
-    top: 0;
-    right: 0;
-    gap: 0;
-  }
-  .product__grid:not(.list) .product__action a {
-    width: 1.875em;
-    height: 1.875em;
-  }
-  .product__grid:not(.list) .product__action a:after {
-    font-size: 0.9375em;
-  }
-}
-@media (max-width: 767px) {
-  .product__grid.list .product__action {
-    top: 0.25em;
-    right: 0;
-    gap: 0;
-  }
-  .product__grid.list .product__action a {
-    width: 1.875em;
-    height: 1.875em;
-  }
-  .product__grid.list .product__action a:after {
-    font-size: 0.9375em;
-  }
-}
-@media (min-width: 768px) {
-  .product__grid.list .product__action {
-    position: initial;
-  }
-}
-.oneProduct .product__action {
-  position: initial;
-  gap: 0.625em;
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  .oneProduct .product__action {
-    justify-content: flex-start;
-  }
-}
-.oneProduct .product__action a {
-  border: 0.0625em solid #E7E7E7;
-  border-radius: 0.625em;
-}
-@media (min-width: 768px) {
-  .oneProduct .product__action a {
-    transition: 0.3s;
-    width: 3.75em;
-    height: 3.75em;
-  }
-}
-.product__liked.active:after {
-  color: #5F8B9F;
 }
 .product__header {
   position: relative;
@@ -2111,9 +1858,8 @@ tr:hover {
 }
 .product__title {
   display: block;
-  font-family: "Oswald";
-  font-size: 1.125em;
-  font-weight: 600;
+  font-size: 1em;
+  font-weight: 400;
   color: #9F5434;
   text-decoration: none;
   transition: none;
@@ -2207,7 +1953,7 @@ tr:hover {
   flex-direction: column-reverse;
   gap: 0.25em;
   font-size: 1.125em;
-  font-weight: 500;
+  font-weight: 400;
 }
 .product__price del {
   color: #333541;
@@ -2765,12 +2511,12 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 
 .btn {
   display: inline-block;
-  padding: 0.9375em 2.25em;
+  padding: 0.875em 2.25em;
   border-radius: 0.625em;
   border: 1px solid;
   outline: none;
   max-width: 100%;
-  font-family: "Oswald";
+  font-family: "Roboto";
   font-size: 0.75em;
   font-weight: 400;
   line-height: 1;
@@ -2791,7 +2537,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   .btn:hover {
     color: #CFA999;
     border-color: #CFA999;
-    background-color: transparent;
+    background-color: #ffffff;
   }
 }
 @media (min-width: 768px) {
@@ -2804,10 +2550,6 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .btn:disabled {
   cursor: not-allowed;
   opacity: 0.4;
-}
-.btn_lg {
-  padding: 1.75em 2.5em;
-  text-transform: uppercase;
 }
 .btn_border {
   color: #CFA999;

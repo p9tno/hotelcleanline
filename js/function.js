@@ -134,13 +134,6 @@ $(document).ready(function() {
     };
     openMobileNav();
 
-    function activeNav() {
-        $('.menu-item').on('click', function() {
-            $('.menu-item').removeClass('current-menu-item');
-            $(this).addClass('current-menu-item');
-        })
-    };
-    activeNav();
 
     function showMore(classItem, btn, start = 1, show = 1) {
         let item = $(''+ classItem +'');
@@ -233,75 +226,75 @@ $(document).ready(function() {
     }
     doTabs();
 
-    function doDrop() {
-        $('.drop__toggle').on('click', function() {
-            // $('.drop__list').toggleClass('open');
-            $(this).toggleClass('active');
-            $(this).closest('.drop').find('.drop__list').toggleClass('open');
-        });
-    };
-    doDrop();
+    // function doDrop() {
+    //     $('.drop__toggle').on('click', function() {
+    //         // $('.drop__list').toggleClass('open');
+    //         $(this).toggleClass('active');
+    //         $(this).closest('.drop').find('.drop__list').toggleClass('open');
+    //     });
+    // };
+    // doDrop();
 
-    function initSelect2 () {
-        function addIcon(icon) {
-            if (!icon.id) {
-                return icon.text;
-            }
-            let $icon = $(
-                '<span><span></span><i></i></span>'
-            );
-            $icon.find("span").text(icon.text);
-            $icon.find("i").attr("class", "icon_" + icon.element.value.toLowerCase());
-            return $icon;
-        }
+    // function initSelect2 () {
+    //     function addIcon(icon) {
+    //         if (!icon.id) {
+    //             return icon.text;
+    //         }
+    //         let $icon = $(
+    //             '<span><span></span><i></i></span>'
+    //         );
+    //         $icon.find("span").text(icon.text);
+    //         $icon.find("i").attr("class", "icon_" + icon.element.value.toLowerCase());
+    //         return $icon;
+    //     }
 
-        $('.select').select2({
-            placeholder: $(this).data('placeholder'),
-            minimumResultsForSearch: Infinity,
-            // templateSelection: addIcon,
-        });
+    //     $('.select').select2({
+    //         placeholder: $(this).data('placeholder'),
+    //         minimumResultsForSearch: Infinity,
+    //         // templateSelection: addIcon,
+    //     });
 
-        // $('.select').on('change',function() {
-        //     let val = $(this).val();
-        //     let form = $(this).closest('.form');
-        //     let phone = form.find('.form__row_phone_js');
-        //     let mail = form.find('.form__row_email_js');
+    //     // $('.select').on('change',function() {
+    //     //     let val = $(this).val();
+    //     //     let form = $(this).closest('.form');
+    //     //     let phone = form.find('.form__row_phone_js');
+    //     //     let mail = form.find('.form__row_email_js');
 
-        //     if ( val == 'mail'){
-        //         mail.removeClass('form__row_hide');
-        //         mail.find('input').prop('required',true);
+    //     //     if ( val == 'mail'){
+    //     //         mail.removeClass('form__row_hide');
+    //     //         mail.find('input').prop('required',true);
 
-        //         phone.addClass('form__row_hide');
-        //         phone.find('input').prop('required',false);
+    //     //         phone.addClass('form__row_hide');
+    //     //         phone.find('input').prop('required',false);
 
-        //     } else {
-        //         mail.addClass('form__row_hide');
-        //         mail.find('input').prop('required',false);
+    //     //     } else {
+    //     //         mail.addClass('form__row_hide');
+    //     //         mail.find('input').prop('required',false);
 
-        //         phone.removeClass('form__row_hide');
-        //         phone.find('input').prop('required',true);
-        //     }
-        // })
-    }
-    initSelect2();
+    //     //         phone.removeClass('form__row_hide');
+    //     //         phone.find('input').prop('required',true);
+    //     //     }
+    //     // })
+    // }
+    // initSelect2();
 
-    $(function(){
-        $(".tel").mask("+7 ( 9 9 9 ) - 9 9 9 - 9 9 - 9 9");
-    });
+    // $(function(){
+    //     $(".tel").mask("+7 ( 9 9 9 ) - 9 9 9 - 9 9 - 9 9");
+    // });
 
-    function initTwentytwenty () {
-        $(".twentytwenty-container").twentytwenty({
-            default_offset_pct: 0.42, // сколько показывать 'изображение до' в процентах (максимально 1) сразу после загрузки страницы
-            orientation: 'horizontal', // ориентация слайдера ('horizontal' или 'vertical')
-            before_label: 'До', // подпись 'до'
-            after_label: 'После', // подпись 'после'
-            no_overlay: true, // не показывать затемнение с надписями 'до' и 'после'
-            move_slider_on_hover: false, // двигать "бегунок" слайдера вместе с курсором мыши
-            move_with_handle_only: true, // двигать слайдер только за его "бегунок"
-            click_to_move: false // разрешить перемещение "бегунка" слайдера по клику на изображении
-        });
-    }
-    // initTwentytwenty(); добавить пример и стили
+    // function initTwentytwenty () {
+    //     $(".twentytwenty-container").twentytwenty({
+    //         default_offset_pct: 0.42, // сколько показывать 'изображение до' в процентах (максимально 1) сразу после загрузки страницы
+    //         orientation: 'horizontal', // ориентация слайдера ('horizontal' или 'vertical')
+    //         before_label: 'До', // подпись 'до'
+    //         after_label: 'После', // подпись 'после'
+    //         no_overlay: true, // не показывать затемнение с надписями 'до' и 'после'
+    //         move_slider_on_hover: false, // двигать "бегунок" слайдера вместе с курсором мыши
+    //         move_with_handle_only: true, // двигать слайдер только за его "бегунок"
+    //         click_to_move: false // разрешить перемещение "бегунка" слайдера по клику на изображении
+    //     });
+    // }
+    // // initTwentytwenty(); добавить пример и стили
 
 
 
@@ -351,41 +344,7 @@ $(document).ready(function() {
     }
     stikyMenu();
 
-    // Видео youtube для страницы
-    function uploadYoutubeVideo() {
-        if ( $( ".js-youtube" ) ) {
 
-            $( ".js-youtube" ).each( function () {
-                // Зная идентификатор видео на YouTube, легко можно найти его миниатюру
-                $( this ).css( 'background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)' );
-
-                // Добавляем иконку Play поверх миниатюры, чтобы было похоже на видеоплеер
-                $( this ).append( $( '<img src="../wp-content/themes/gymn/assets/img/play.png" alt="Play" class="video__play">' ) );
-
-            } );
-
-            $( '.video__play, .video__prev' ).on( 'click', function () {
-                // создаем iframe со включенной опцией autoplay
-                let wrapp = $( this ).closest( '.js-youtube' ),
-                    videoId = wrapp.attr( 'id' ),
-                    iframe_url = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&autohide=1";
-
-                if ( $( this ).data( 'params' ) ) iframe_url += '&' + $( this ).data( 'params' );
-
-                // Высота и ширина iframe должны быть такими же, как и у родительского блока
-                let iframe = $( '<iframe/>', {
-                    'frameborder': '0',
-                    'src': iframe_url,
-                    'allow': "autoplay"
-                } )
-
-                // Заменяем миниатюру HTML5 плеером с YouTube
-                $( this ).closest( '.video__wrapper' ).append( iframe );
-
-            } );
-        }
-    };
-    // uploadYoutubeVideo();
 
     function uploadYoutubeVideoForModal() {
         if ( $( ".youtubeModal_js" ) ) {
@@ -415,51 +374,7 @@ $(document).ready(function() {
             } );
         }
     };
-    uploadYoutubeVideoForModal();
-
-
-    // start animate numbers
-    function onVisible( selector, callback, repeat = false ) {
-
-    let options = {
-        threshold: [ 0.5 ]
-    };
-    let observer = new IntersectionObserver( onEntry, options );
-    let elements = document.querySelectorAll( selector );
-
-    for ( let elm of elements ) {
-        observer.observe( elm );
-    }
-
-    function onEntry( entry ) {
-        entry.forEach( change => {
-            let elem = change.target;
-            // console.log(change);
-            // console.log(elem.innerHTML);
-            if ( change.isIntersecting ) {
-                if ( !elem.classList.contains( 'show' ) || repeat ) {
-                    elem.classList.add( 'show' );
-                    callback( elem );
-                }
-            }
-        } );
-    }
-    }
-
-    onVisible( '.programsInfo__number', function ( e ) {
-        animateNumber( e, e.innerHTML );
-    } );
-
-    function animateNumber( elem, final, duration = 1000 ) {
-        let start = 0;
-        // console.log('init');
-        setInterval( function () {
-            if ( final > start ) {
-                elem.innerHTML = start++;
-            }
-        }, duration / final );
-    }
-    // end animate numbers
+    // uploadYoutubeVideoForModal();
 
     function initAOS() {
         // Добавляем анимацию к заголовкам
@@ -558,38 +473,6 @@ $(document).ready(function() {
     }
     hideNav();
 
-    function getLetterInWrapp(title) {
-        let html = '';
-        let isTag = false;
-        const text = title.innerHTML;
-        const clean = text
-            .replace(/^\s\s*/, '')
-            .replace(/\s\s*$/, '')
-            .replace(/(\r\n|\n|\r)/gm, '')
-            .replace('&nbsp;', '');
-    
-        const symbols = clean.split('');
-        // console.log(text);
-        // console.log('clean', clean);
-    
-        symbols.forEach((char) => {
-            if (char === '<') {
-                isTag = true;
-            }
-            if (isTag || char === ' ') {
-                html += char;
-            } else {
-                html += '<span class="letter">' + char + '</span>';
-            }
-            if (char === '>') {
-                isTag = false;
-            }
-        });
-    
-        title.innerHTML = html;
-        return title.querySelectorAll('.letter');
-    }
-
 
     // Scroll to ID
     function menuScroll(menuItem) {
@@ -632,75 +515,6 @@ $(document).ready(function() {
     //
     // console.log(thousandSeparator(700));
     // --------------------------------------------------------------------
-
-
-
-    // --------------------------------------------------------------------
-    // <div class="form__row">
-    //     <label class="form__file_label" data-text="Файл не выбран">
-    //     <input type="file" required="required"/>
-    //     <p class="form__file">Загрузить файл</p>
-    //     </label>
-    // </div>
-
-    // function addNameFile() {
-    //     $('input[type="file"]').change(function (e) {
-    //         // console.log('change');
-    //         var text = $(this).closest('label').attr('data-text');
-    //         // var container = $(this).closest('.tab-item');
-    //         if (typeof e.target.files[0] == 'undefined') {
-    //             var fileName = text;
-    //             $(this).parent().removeClass('active');
-    //         } else {
-    //             var fileName = e.target.files[0].name;
-    //             $(this).parent().addClass('active');
-    //             fileName = fileName.substring(0, 20);
-    //             // console.log(fileName);
-    //         }
-    //         $(this).parent().find('p').text(fileName);
-    //         // console.log(fileName);
-    //         // container.find('[controlBtn_JS]').removeClass('disabled');
-    //     });
-    // }
-    // addNameFile();
-    // --------------------------------------------------------------------
-
-
-    // function reloadPage () {
-    //     if (!localStorage.getItem("reload")) {
-    //         localStorage.setItem("reload", "true");
-    //         location.reload();
-    //     }
-    //     else {
-    //         localStorage.removeItem("reload");
-    //     }
-    // }
-
-
-    // Склонение существительных после числительных. https://snipp.ru/php/word-declination
-    // ['час', 'часа', 'часов']
-    // ['минута', 'минуты', 'минут']
-    // function numWord (value, words, show = true) {
-    //     let num = value % 100;
-    //     if (num > 19) {
-    //         num = value % 10;
-    //     }
-
-    //     let out = (show) ?  value + ' ' : '';
-
-    //     switch (num) {
-    //         case 1:  out += words[0]; break;
-    //         case 2: 
-    //         case 3: 
-    //         case 4:  out += words[1]; break;
-    //         default: out += words[2]; break;
-        
-    //     }
-    //     // console.log(out);
-    //     return out;
-    // }
-
-
 
 })
 

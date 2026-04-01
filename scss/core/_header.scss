@@ -237,15 +237,11 @@ $transition: 0.5s;
 		a {
 			position: relative;
 			text-decoration: none;
-
-			font-family: $second_font_family;
-			font-weight: 300;
 			font-size: 1.5em;
 			color: $main_color;
 			
 			@media (min-width: 768px) {
 				font-size: 1em;
-			  
 			}
 
 			&:after {
